@@ -25,7 +25,7 @@ const TitleCard = ({ title, category }) => {
     fetch(`https://api.themoviedb.org/3/movie/${category}?language=en-US&page=1`, options)
       .then((res) => res.json())
       .then((res) => {
-        console.log(`Data for category ${category}:`, res.results); // Log the response
+        console.log(`Data for category ${category}:`, res.results);
         setApiData(res.results);
       })
       .catch((err) => console.error(err));

@@ -8,6 +8,7 @@ import TitleCard from '../../components/TitleCard';
 import Footer from '../../components/Footer';
 
 const Home = ({ names }) => {
+    console.log(names)
   return (
     <div className="home">
     {/* Navbar */}
